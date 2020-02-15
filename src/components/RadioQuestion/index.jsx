@@ -4,7 +4,7 @@ import theme from "../../_theme"
 
 const Outer = styled.fieldset`
     border: none;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     animation: fadeIn 0.2s ease-out;
     @keyframes fadeIn {
         from{
@@ -26,7 +26,8 @@ const Options = styled.div`
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
 `
 
 
@@ -35,10 +36,12 @@ const Option = styled.div``
 const LabelCard = styled.label`
     display: flex;
     align-items: center;
+    min-height: 62px;
     justify-content: center;
     width: 100%;
     border-radius: 5px;
     background: ${theme.white};
+    white-space: wrap-word;
     padding: 10px;
     font-size: 0.95rem;
     height: 100%;
