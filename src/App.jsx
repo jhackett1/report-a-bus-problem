@@ -1,19 +1,17 @@
-import React from "react"
-import { createGlobalStyle } from "styled-components"
+import React, { useState } from "react"
+import FormScene from "./containers/FormScene"
+import SuccessScene from "./containers/SuccessScene"
 
-const Style = createGlobalStyle`
-    *{
-        font-family: 'Open Sans', sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+const App = () => {
+    const [ submitted, setSubmitted ] = useState(false)
+
+    const submit = () => {
+        setSubmitted(true)
     }
-`
 
-const App = () =>
-    <>
-        <Style/>
-        <h1>test</h1>
-    </>
+    return submitted ? 
+        <SuccessScene/> : 
+        <FormScene submit={submit}/>
+}
 
 export default App
