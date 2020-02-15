@@ -8,6 +8,7 @@ import WhenQuestion from "../components/WhenQuestion"
 import LocationQuestion from "../components/LocationQuestion"
 import TextAreaQuestion from "../components/TextAreaQuestion"
 import Loader from "../components/Loader"
+import Footer from "../components/Footer"
 
 const Headline = styled.h1`
     text-transform: uppercase;
@@ -154,6 +155,7 @@ const FormScene = ({
                 }
                 <Notice>Your report is totally anonymous and helps us campaign to make Sheffield’s buses better.</Notice>
             </Panel>
+            <Footer/>
         </>
     )
 }
