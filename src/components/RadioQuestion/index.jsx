@@ -96,7 +96,7 @@ const RadioQuestion = ({
                         type="radio" 
                         value={option}
                         name={question}
-                        selected={selected === option}
+                        checked={selected === option}
                         id={`${question}-${i}`}
                         onChange={e => onChange(e.target.value)}
                     />

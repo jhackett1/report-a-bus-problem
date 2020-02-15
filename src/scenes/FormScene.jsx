@@ -4,21 +4,23 @@ import theme from "../_theme"
 import data from "../busRoutes.json"
 import RadioQuestion from "../components/RadioQuestion"
 import RouteQuestion from "../components/RouteQuestion"
+import WhenQuestion from "../components/WhenQuestion"
 import LocationQuestion from "../components/LocationQuestion"
 import TextAreaQuestion from "../components/TextAreaQuestion"
+import Loader from "../components/Loader"
 
 const Headline = styled.h1`
     text-transform: uppercase;
     line-height: 1;
     font-size: 2.5rem;
     max-width: 400px;
-    margin: 0 auto 15px auto;
+    margin: 15px auto;
 `
 
 const Lede = styled.p`
     font-size: 1.1rem;
     max-width: 400px;
-    margin: 0 auto 25px auto;
+    margin: 0 auto 35px auto;
 `
 
 const Panel = styled.form`
@@ -31,16 +33,45 @@ const Panel = styled.form`
     margin: 0 auto;
 `
 
+const Button = styled.button`
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: ${theme.red};
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    min-height: 54.5px;
+    cursor: pointer;
+    &:disabled{
+        cursor: inherit;
+        padding: 10px;
+    }
+`
+
+const Notice = styled.p`
+    text-align: center;
+    font-size: 0.9rem;
+`
+
 const FormScene = ({
-    submit
+    submit,
+    submitting
 }) => {
 
     const [ route, setRoute ] = useState(false)
     const [ way, setWay ] = useState(false)    
     const [ location, setLocation ] = useState("")    
+    const [ when, setWhen ] = useState("Just now")
     const [ whatWentWrong, setWhatWentWrong ] = useState(false)
     const [ delay, setDelay ] = useState(false)
     const [ otherProblems, setOtherProblems ] = useState("")
+
+    console.log(when)
 
     const alphabetise = (a, b) => {
         if(a.route < b.route) { return -1; }
@@ -48,19 +79,29 @@ const FormScene = ({
         return 0;
     }
 
+    const handleSubmit = e => {
+        e.preventDefault()
+        submit({
+            route,
+            way,
+            location,
+            whatWentWrong,
+            delay,
+            otherProblems
+        })
+    }
+
     return(
         <>
             <Headline>Help us improve Sheffield’s buses</Headline>
             <Lede>We want to build a map of how the city’s bus services are letting us all down, and use it to campaign for much-needed improvements.</Lede>
-            <Panel>
-
+            <Panel onSubmit={handleSubmit}>
                 <RouteQuestion
                     question="Which route?"
                     selected={route}
                     onChange={setRoute}
                     options={data.sort(alphabetise)}
                 />
-
                 {route &&
                     <RadioQuestion
                         question="Which way?"
@@ -69,14 +110,17 @@ const FormScene = ({
                         options={route.ends.map(end => `Toward ${end}`)}
                     />
                 }
-
                 <LocationQuestion
                     question="Which bus stop?"
                     hint="Describe what it's near, or use your current location"
                     value={location}
                     onChange={setLocation}
                 />
-
+                <WhenQuestion
+                    question="When was this?"
+                    value={when}
+                    onChange={setWhen}
+                />
                 <RadioQuestion
                     question="What went wrong?"
                     selected={whatWentWrong}
@@ -87,7 +131,6 @@ const FormScene = ({
                         "Something else"
                     ]}
                 />
-
                 {whatWentWrong === "Delayed" &&
                     <RadioQuestion
                         question="How long was the delay?"
@@ -101,14 +144,17 @@ const FormScene = ({
                         ]}
                     />
                 }
-
                 <TextAreaQuestion
                     question="Any other problems?"
                     hint="For example, wheelchair access or the condition of the bus"
                     value={otherProblems}
                     onChange={setOtherProblems}
                 />
-
+                {submitting ? 
+                    <Button disabled><Loader light alt="Loading..."/></Button> : 
+                    <Button>Send your report</Button>
+                }
+                <Notice>Your report is totally anonymous and helps us campaign to make Sheffield’s buses better.</Notice>
             </Panel>
         </>
     )

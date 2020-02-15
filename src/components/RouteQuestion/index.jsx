@@ -1,13 +1,14 @@
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
 import theme from "../../_theme"
+import arrow from "./arrow.svg"
 
 const Outer = styled.div`
     margin-bottom: 35px;
 `
 
 const Select = styled.select`
-    padding: 10px;
+    padding: 15px;
     box-shadow: 0px 6px 20px ${theme.paleShadow};
     color: ${theme.black};
     width: 100%;
@@ -15,6 +16,10 @@ const Select = styled.select`
     font-size: 1rem;
     border: none;
     color: ${theme.black};
+    appearance: none;
+    background-image: url(${arrow});
+    background-repeat: no-repeat;
+    background-position: 96%;
 `
 
 const Question = styled.label`
@@ -32,13 +37,15 @@ const RouteQuestion = ({
 }) => 
     <Outer>
         <Question>{question}</Question>
-        <Select onChange={e => onChange(options.filter(route => route.route === e.target.value)[0])}>        
+        <Select 
+            value={selected.route}
+            onChange={e => onChange(options.filter(route => route.route === e.target.value)[0])}
+        >        
             <option value=""></option>
             {options.map(route =>        
                 <option 
                     key={route.route} 
                     value={route.route}
-                    selected={route.route === selected.route}
                 >{route.route}</option>            
             )}
         </Select>

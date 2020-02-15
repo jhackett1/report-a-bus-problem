@@ -19,6 +19,7 @@ const Textarea = styled.textarea`
     color: ${theme.black};
     min-width: 100%;
     max-width: 100%;
+    margin-bottom: 10px;
 `
 
 const Question = styled.label`
@@ -32,28 +33,10 @@ const Hint = styled.p`
     margin-bottom: 15px;
 `
 
-const Button = styled.button`
-    background: none;
-    border: none;
-    position: absolute;
-    right: 15px;
-    bottom: 9px;
-    cursor: pointer;
-`
-
-const Loader = styled.img`
-    position: absolute;
-    right: 15px;
-    bottom: 12px;
-    animation: spin 1.5s infinite;
-    @keyframes spin {
-        from{
-            transform: rotate(0deg)
-        }
-        to{
-            transform: rotate(360deg)
-        }
-    }
+const Optional = styled.p`
+    opacity: 0.5;
+    text-align: right;
+    font-size: 0.9rem;
 `
 
 const TextAreaQuestion = ({
@@ -68,7 +51,9 @@ const TextAreaQuestion = ({
             <Textarea
                 rows="3"
                 onChange={e => onChange(e.target.value)}
-            >{value}</Textarea>
+                value={value}
+            />
+            <Optional>(optional)</Optional>
         </Outer>
 
 export default TextAreaQuestion
