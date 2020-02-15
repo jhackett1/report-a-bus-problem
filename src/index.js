@@ -1,5 +1,5 @@
 import React from "react"
-import ReactDOM from "react-dom"
+import { render } from "react-snapshot"
 import App from "./App"
 import { createGlobalStyle } from "styled-components"
 import theme from "./_theme"
@@ -18,4 +18,4 @@ const Style = createGlobalStyle`
     }
 `
 
-ReactDOM.render(<><Style/><App/></>, document.getElementById('root'))
+render(<><Style/><App/></>, document.getElementById('root'))
