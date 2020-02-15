@@ -2,7 +2,7 @@ import React from "react"
 import ReactDOM from "react-dom"
 import App from "./App"
 import { createGlobalStyle } from "styled-components"
-import theme from "./components/_theme"
+import theme from "./_theme"
 
 const Style = createGlobalStyle`
     *{
@@ -14,6 +14,7 @@ const Style = createGlobalStyle`
     body{
         background: ${theme.red};
         color: ${theme.white};
+        padding: 20px;
     }
 `
 

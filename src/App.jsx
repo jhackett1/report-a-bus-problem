@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import FormScene from "./containers/FormScene"
-import SuccessScene from "./containers/SuccessScene"
+import FormScene from "./scenes/FormScene"
+import SuccessScene from "./scenes/SuccessScene"
 
 const App = () => {
     const [ submitted, setSubmitted ] = useState(false)
