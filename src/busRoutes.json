@@ -1,0 +1,122 @@
+[
+    {
+        "route": "X1/X10",
+        "ends": [
+            "Sheffield", "Maltby"
+        ]
+    },
+    {
+        "route": "36",
+        "ends": [
+            "Sheffield", "Rotherham"
+        ]
+    },
+    {
+        "route": "71/72/72x/73/73x/74a/X74",
+        "ends": [
+            "Sheffield", "Hexthorpe", "Lakeside Circular", "Rotherham"
+        ]
+    },
+    {
+        "route": "X78",
+        "ends": [
+            "Sheffield", "Doncaster"
+        ]
+    },
+    {
+        "route": "216/X5/X54/X55",
+        "ends": [
+            "Sheffield", "Dinnington"
+        ]
+    },
+    {
+        "route": "7/8/8a",
+        "ends": [
+            "Ecclesfield", "Crystal Peaks"
+        ]
+    },
+    {
+        "route": "11/11a",
+        "ends": [
+            "Chapeltown", "Herdings"
+        ]
+    },
+    {
+        "route": "18/19",
+        "ends": [
+            "Sheffield", "Meadowhall", "Hillsborough"
+        ]
+    },
+    {
+        "route": "20",
+        "ends": [
+            "Hemsworth", "Ecclesfield"
+        ]
+    },
+    {
+        "route": "24/25",
+        "ends": [
+            "Woodhouse", "Bradway"
+        ]
+    },
+    {
+        "route": "41/414",
+        "ends": [
+            "Cantley", "Edlington"
+        ]
+    },
+    {
+        "route": "51",
+        "ends": [
+            "Lodge Moor", "Charnock", "Crosspool", "Sharrow"
+        ]
+    },
+    {
+        "route": "52/52a",
+        "ends": [
+            "Doncaster", "South Elmsall", "Woodhouse", "Wisewood", "Loxley"
+        ]
+    },
+    {
+        "route": "56",
+        "ends": [
+            "Nether Edge", "Wybourn"
+        ]
+    },
+    {
+        "route": "75/76",
+        "ends": [
+            "Batemoor/Jordanthorpe", "Lowedges", "Woodhouse", "Shiregreen"
+        ]
+    },
+    {
+        "route": "81/82",
+        "ends": [
+            "Stannington", "Dore", "Hall Park Head", "Millhouses"
+        ]
+    },
+    {
+        "route": "95/95a",
+        "ends": [
+            "Walkley", "Meadowhall"
+        ]
+    },
+    {
+        "route": "97/98",
+        "ends": [
+            "Hillsborough", "Totley"
+        ]
+    },
+    {
+        "route": "208",
+        "ends": [
+            "Sheffield", "Dinnington"
+        ]
+    },
+    {
+        "route": "271/272",
+        "ends": [
+            "Sheffield", "Castleton"
+        ]
+    }
+]
