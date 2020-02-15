@@ -88,7 +88,6 @@ const Input = styled.input`
 
 const TextInput = styled.input`
     padding: 15px;    
-    padding-right: 60px;
     box-shadow: 0px 6px 20px ${theme.paleShadow};
     color: ${theme.black};
     width: 100%;
@@ -158,7 +157,7 @@ const WhenQuestion = ({
                 <TextInput 
                 value={value} 
                 onChange={e => onChange(e.target.value)}
-                placeholder="Roughly, when did this happen?"
+                placeholder="When did this happen?"
             />
             }
         </Outer>

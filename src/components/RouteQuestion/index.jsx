@@ -8,6 +8,7 @@ const Outer = styled.div`
 `
 
 const Select = styled.select`
+    background: ${theme.white};
     padding: 15px;
     box-shadow: 0px 6px 20px ${theme.paleShadow};
     color: ${theme.black};
