@@ -32,6 +32,11 @@ const Options = styled.div`
 
 
 const Option = styled.div`
+    &:focus-within{
+        label{
+            border: 1px solid ${theme.red}
+        }
+    }
     margin-bottom: 15px;
 `
 
@@ -93,6 +98,10 @@ const TextInput = styled.input`
     color: ${theme.black};
     &::placeholder{
         opacity: 0.5
+    }
+    &:focus{
+        outline: none;
+        border: 1px solid ${theme.red}
     }
 `
 

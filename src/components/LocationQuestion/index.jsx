@@ -20,6 +20,10 @@ const Input = styled.input`
     font-size: 1rem;
     border: none;
     color: ${theme.black};
+    &:focus{
+        outline: none;
+        border: 1px solid ${theme.red}
+    }
 `
 
 const Question = styled.label`
@@ -69,7 +73,11 @@ const RouteQuestion = ({
         <Outer>
             <Question>{question}</Question>
             <Hint>{hint}</Hint>
-            <Input value={value} onChange={e => onChange(e.target.value)}/>        
+            <Input 
+                required
+                value={value} 
+                onChange={e => onChange(e.target.value)}
+            />        
             {finding ? <Loader/> : <Button onClick={geolocate}><img src={arrow} alt="use my current location"/></Button>}
         </Outer>
     )

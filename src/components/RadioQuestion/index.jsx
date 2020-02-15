@@ -31,7 +31,13 @@ const Options = styled.div`
 `
 
 
-const Option = styled.div``
+const Option = styled.div`
+    &:focus-within{
+        label{
+            border: 1px solid ${theme.red}
+        }
+    }
+`
 
 const LabelCard = styled.label`
     display: flex;
@@ -93,6 +99,7 @@ const RadioQuestion = ({
             {options.map((option, i) =>
                 <Option key={option}>
                     <Input 
+                        required
                         type="radio" 
                         value={option}
                         name={question}

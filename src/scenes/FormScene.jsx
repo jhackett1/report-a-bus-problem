@@ -71,18 +71,16 @@ const FormScene = ({
     const [ delay, setDelay ] = useState(false)
     const [ otherProblems, setOtherProblems ] = useState("")
 
-    console.log(when)
-
     const alphabetise = (a, b) => {
-        if(a.route < b.route) { return -1; }
-        if(a.route > b.route) { return 1; }
+        if(a.route < b.route) { return -1 }
+        if(a.route > b.route) { return 1 }
         return 0;
     }
 
     const handleSubmit = e => {
         e.preventDefault()
         submit({
-            route,
+            route: route.route,
             way,
             location,
             whatWentWrong,

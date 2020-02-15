@@ -20,6 +20,10 @@ const Select = styled.select`
     background-image: url(${arrow});
     background-repeat: no-repeat;
     background-position: 96%;
+    &:focus{
+        outline: none;
+        border: 1px solid ${theme.red}
+    }
 `
 
 const Question = styled.label`
@@ -38,6 +42,7 @@ const RouteQuestion = ({
     <Outer>
         <Question>{question}</Question>
         <Select 
+            required
             value={selected.route}
             onChange={e => onChange(options.filter(route => route.route === e.target.value)[0])}
         >        

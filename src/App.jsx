@@ -13,8 +13,10 @@ const App = () => {
             method: "post",
             body: JSON.stringify(body)
         })
-        // let data = await res.json()
-        // setSubmitting(false)
+        if(res.status === 200){
+            setSubmitted(true)
+            setSubmitting(false)
+        }
     }
 
     return submitted ? 

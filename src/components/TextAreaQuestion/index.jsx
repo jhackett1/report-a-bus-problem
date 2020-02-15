@@ -20,6 +20,10 @@ const Textarea = styled.textarea`
     min-width: 100%;
     max-width: 100%;
     margin-bottom: 10px;
+    &:focus{
+        outline: none;
+        border: 1px solid ${theme.red}
+    }
 `
 
 const Question = styled.label`
