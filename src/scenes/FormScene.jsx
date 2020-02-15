@@ -48,17 +48,19 @@ const FormScene = ({
                     ]}
                 />
 
-                <RadioQuestion
-                    question="How long was the delay?"
-                    selected={delay}
-                    onChange={setDelay}
-                    options={[
-                        "Less than 10 minutes",
-                        "10-20 minutes", 
-                        "20-30 minutes",
-                        "More than 30 minutes"
-                    ]}
-                />
+                {whatWentWrong === "Delayed" &&
+                    <RadioQuestion
+                        question="How long was the delay?"
+                        selected={delay}
+                        onChange={setDelay}
+                        options={[
+                            "Less than 10 minutes",
+                            "10-20 minutes", 
+                            "20-30 minutes",
+                            "More than 30 minutes"
+                        ]}
+                    />
+                }
             </Panel>
         </>
     )

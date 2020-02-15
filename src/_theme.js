@@ -6,5 +6,7 @@ export default {
     paleShadow: "#F0E9D8",
 
     black: "#282828",
-    white: "#ffffff"
+    white: "#ffffff",
+
+    focus: "#EFB950"
 }

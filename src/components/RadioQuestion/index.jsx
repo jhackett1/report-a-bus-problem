@@ -5,6 +5,15 @@ import theme from "../../_theme"
 const Outer = styled.fieldset`
     border: none;
     margin-bottom: 30px;
+    animation: fadeIn 0.2s ease-out;
+    @keyframes fadeIn {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
 `
 
 const Question = styled.legend`
@@ -19,6 +28,9 @@ const Options = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 `
+
+
+const Option = styled.div``
 
 const LabelCard = styled.label`
     display: flex;
@@ -35,7 +47,7 @@ const LabelCard = styled.label`
     cursor: pointer;
     margin-bottom: 10px;
     box-shadow: 0px 6px 20px ${theme.paleShadow};
-    transition: 0.1s ease-out;
+    transition: transform 0.1s ease-out, box-shadow 0.1s ease-out, color 0.1s ease-out, background 0.1s ease-out;
     @supports (display: grid){
         margin-bottom: 0px;
     }
@@ -48,11 +60,19 @@ const LabelCard = styled.label`
 `
 
 const Input = styled.input`
-    display: none;
+    opacity: 0;
+    position: absolute;
     &:checked + label {
         background: ${theme.red};        
         color: ${theme.white};
         box-shadow: 0px 6px 20px ${theme.red}26;
+        cursor: inherit;
+        &:hover{
+            transform: scale(1)
+        }
+        &:active{
+            transform: scale(1)
+        }
     }
 `
 
@@ -68,7 +88,7 @@ const RadioQuestion = ({
         </Question>
         <Options>
             {options.map((option, i) =>
-                <div key={option}>
+                <Option key={option}>
                     <Input 
                         type="radio" 
                         value={option}
@@ -80,7 +100,7 @@ const RadioQuestion = ({
                     <LabelCard 
                         htmlFor={`${question}-${i}`}
                     >{option}</LabelCard>
-                </div>    
+                </Option>    
             )}
         </Options>
     </Outer>
