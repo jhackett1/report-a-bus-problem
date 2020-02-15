@@ -155,10 +155,11 @@ const WhenQuestion = ({
             </Options>
             {!now &&
                 <TextInput 
-                value={value} 
-                onChange={e => onChange(e.target.value)}
-                placeholder="When did this happen?"
-            />
+                    required
+                    value={value} 
+                    onChange={e => onChange(e.target.value)}
+                    placeholder="When did this happen?"
+                />
             }
         </Outer>
     )
