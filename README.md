@@ -1,6 +1,6 @@
 # Report a bus problem
 
-**[ON THE WEB HERE(https://thirsty-noether-ab7efc.netlify.com/)**
+**[ON THE WEB HERE](https://thirsty-noether-ab7efc.netlify.com/)**
 
 Simple one-page app to report delays and cancellations, and optionally sign up for email updates.
 
