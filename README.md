@@ -24,5 +24,5 @@ Suitable for all sorts of static hosting
 ## To do
 
 - add manifest file and service worker for offline installs
-- add social metadata
-- add static snapshot integration
+- add social metadata ✅
+- add static snapshot integration ✅
