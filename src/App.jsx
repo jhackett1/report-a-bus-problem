@@ -11,7 +11,10 @@ const App = () => {
         setSubmitting(true)
         let res = await fetch(process.env.REACT_APP_FORM_ENDPOINT, {
             method: "post",
-            body: JSON.stringify(body)
+            body: JSON.stringify({
+                ...body,
+                dateSubmitted: new Date().toUTCString()
+            })
         })
         if(res.status === 200){
             setSubmitted(true)
