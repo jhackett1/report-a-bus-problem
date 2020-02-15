@@ -29,6 +29,8 @@ const FormScene = ({
 }) => {
 
     const [ whatWentWrong, setWhatWentWrong ] = useState(false)
+    const [ delay, setDelay ] = useState(false)
+
 
     return(
         <>
@@ -43,6 +45,18 @@ const FormScene = ({
                         "Delayed",
                         "Cancelled", 
                         "Something else"
+                    ]}
+                />
+
+                <RadioQuestion
+                    question="How long was the delay?"
+                    selected={delay}
+                    onChange={setDelay}
+                    options={[
+                        "Less than 10 minutes",
+                        "10-20 minutes", 
+                        "20-30 minutes",
+                        "More than 30 minutes"
                     ]}
                 />
             </Panel>

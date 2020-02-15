@@ -4,12 +4,13 @@ import theme from "../../_theme"
 
 const Outer = styled.fieldset`
     border: none;
+    margin-bottom: 30px;
 `
 
 const Question = styled.legend`
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 `
 
 const Options = styled.div`
@@ -27,6 +28,7 @@ const LabelCard = styled.label`
     border-radius: 5px;
     background: ${theme.white};
     padding: 10px;
+    font-size: 0.95rem;
     height: 100%;
     text-align: center;
     color: ${theme.red};
