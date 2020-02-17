@@ -44,16 +44,55 @@ const Panel = styled.form`
     margin: 0 auto;
 `
 
+const Button = styled.a`
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: ${theme.red};
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    min-height: 54.5px;
+    cursor: pointer;
+    &:disabled{
+        cursor: inherit;
+        padding: 10px;
+    }
+`
+
+const Notice = styled.div`
+    text-align: center;
+    font-size: 0.9rem;
+    p{
+        margin-bottom: 10px;
+    }
+`
+
+const PanelHeading = styled.p`
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: block;
+    text-align: center;
+`
+
 const SuccessScene = () =>
     <>
         <Holder>
             <img src={bigTick} alt=""/>
             <Headline>Thanks, we've got your report</Headline>
-            <Lede>Content about what happens next.</Lede>
             <Link href="/">Make another report</Link>
         </Holder>
         <Panel>
-            Mailing list form here
+            <PanelHeading>Would you like updates about the campaign?</PanelHeading>
+            <Button href="https://louisehaighmp.nationbuilder.com/betterbuses">Get updates</Button>
+            <Notice><p>Via external website</p></Notice>
         </Panel>
         <Footer/>
     </>

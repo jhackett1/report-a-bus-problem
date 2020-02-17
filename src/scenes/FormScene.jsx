@@ -18,10 +18,13 @@ const Headline = styled.h1`
     margin: 15px auto;
 `
 
-const Lede = styled.p`
+const Lede = styled.div`
     font-size: 1.1rem;
     max-width: 400px;
     margin: 0 auto 35px auto;
+    p{
+        margin-bottom: 10px;
+    }
 `
 
 const Panel = styled.form`
@@ -54,9 +57,12 @@ const Button = styled.button`
     }
 `
 
-const Notice = styled.p`
+const Notice = styled.div`
     text-align: center;
     font-size: 0.9rem;
+    p{
+        margin-bottom: 10px;
+    }
 `
 
 const FormScene = ({
@@ -94,7 +100,10 @@ const FormScene = ({
     return(
         <>
             <Headline>Help us improve Sheffield’s buses</Headline>
-            <Lede>We want to build a map of how the city’s bus services are letting us all down, and use it to campaign for much-needed improvements.</Lede>
+            <Lede>
+                <p>Too often our local buses are late or unreliable and services don’t seem to improve.</p>
+                <p>Help me to map where Sheffield’s bus services are letting you down, and I’ll use it to demand much needed improvements.</p>
+            </Lede>
             <Panel onSubmit={handleSubmit}>
                 <RouteQuestion
                     question="Which route?"
@@ -112,7 +121,7 @@ const FormScene = ({
                 }
                 <LocationQuestion
                     question="Which bus stop?"
-                    hint="Describe what it's near, or use your current location"
+                    hint="Use the bus stop code (usually on the sign), describe what it’s near or use your current location"
                     value={location}
                     onChange={setLocation}
                 />
@@ -154,7 +163,10 @@ const FormScene = ({
                     <Button disabled><Loader light alt="Loading..."/></Button> : 
                     <Button>Send your report</Button>
                 }
-                <Notice>Your report is totally anonymous and helps us campaign to make Sheffield’s buses better.</Notice>
+                <Notice>
+                    <p>These reports are completely confidential.</p>
+                    <p>Louise Haigh is the MP for Sheffield Heeley and she will use these reports to demand improvements from First Buses on the service you rely on.</p>
+                </Notice>
             </Panel>
             <Footer/>
         </>
