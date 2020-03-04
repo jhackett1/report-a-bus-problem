@@ -7,6 +7,7 @@ import RouteQuestion from "../components/RouteQuestion"
 import WhenQuestion from "../components/WhenQuestion"
 import LocationQuestion from "../components/LocationQuestion"
 import TextAreaQuestion from "../components/TextAreaQuestion"
+import EmailQuestion from "../components/EmailQuestion"
 import Loader from "../components/Loader"
 import Footer from "../components/Footer"
 
@@ -77,6 +78,7 @@ const FormScene = ({
     const [ whatWentWrong, setWhatWentWrong ] = useState(false)
     const [ delay, setDelay ] = useState(false)
     const [ otherProblems, setOtherProblems ] = useState("")
+    const [ email, setEmail ] = useState("")
 
     const alphabetise = (a, b) => {
         if(a.route < b.route) { return -1 }
@@ -93,7 +95,8 @@ const FormScene = ({
             location,
             whatWentWrong,
             delay,
-            otherProblems
+            otherProblems,
+            email
         })
     }
 
@@ -158,6 +161,12 @@ const FormScene = ({
                     hint="For example, wheelchair access or the condition of the bus"
                     value={otherProblems}
                     onChange={setOtherProblems}
+                />
+                <EmailQuestion
+                    question="Your email address"
+                    hint="If you choose to give your email, we'll only ever use it to give updates on your report."
+                    value={email}
+                    onChange={setEmail}
                 />
                 {submitting ? 
                     <Button disabled><Loader light alt="Loading..."/></Button> : 

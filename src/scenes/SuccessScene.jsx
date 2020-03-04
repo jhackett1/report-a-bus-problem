@@ -18,11 +18,11 @@ const Headline = styled.h1`
     margin: 15px auto;
 `
 
-const Lede = styled.p`
-    font-size: 1.1rem;
-    max-width: 400px;
-    margin: 0 auto 10px auto;
-`
+// const Lede = styled.p`
+//     font-size: 1.1rem;
+//     max-width: 400px;
+//     margin: 0 auto 10px auto;
+// `
 
 const Link = styled.a`
     display: inline-block;
