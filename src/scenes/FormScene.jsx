@@ -164,7 +164,7 @@ const FormScene = ({
                 />
                 <EmailQuestion
                     question="Your email address"
-                    hint="If you choose to give your email, we'll only ever use it to give updates on your report."
+                    hint="If you choose to give your email, we'll only ever use it to give updates on your report and bus services."
                     value={email}
                     onChange={setEmail}
                 />
