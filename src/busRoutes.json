@@ -2,121 +2,518 @@
     {
         "route": "X1/X10",
         "ends": [
-            "Sheffield", "Maltby"
+            "Sheffield",
+            "Maltby"
         ]
     },
     {
         "route": "36",
         "ends": [
-            "Sheffield", "Rotherham"
+            "Sheffield",
+            "Rotherham"
         ]
     },
     {
         "route": "71/72/72x/73/73x/74a/X74",
         "ends": [
-            "Sheffield", "Hexthorpe", "Lakeside Circular", "Rotherham"
+            "Sheffield",
+            "Hexthorpe",
+            "Lakeside Circular",
+            "Rotherham"
         ]
     },
     {
         "route": "X78",
         "ends": [
-            "Sheffield", "Doncaster"
+            "Sheffield",
+            "Doncaster"
         ]
     },
     {
         "route": "216/X5/X54/X55",
         "ends": [
-            "Sheffield", "Dinnington"
+            "Sheffield",
+            "Dinnington"
         ]
     },
     {
         "route": "7/8/8a",
         "ends": [
-            "Ecclesfield", "Crystal Peaks"
+            "Ecclesfield",
+            "Crystal Peaks"
         ]
     },
     {
         "route": "11/11a",
         "ends": [
-            "Chapeltown", "Herdings"
+            "Chapeltown",
+            "Herdings"
         ]
     },
     {
         "route": "18/19",
         "ends": [
-            "Sheffield", "Meadowhall", "Hillsborough"
+            "Sheffield",
+            "Meadowhall",
+            "Hillsborough"
         ]
     },
     {
         "route": "20",
         "ends": [
-            "Hemsworth", "Ecclesfield"
+            "Hemsworth",
+            "Ecclesfield"
         ]
     },
     {
         "route": "24/25",
         "ends": [
-            "Woodhouse", "Bradway"
+            "Woodhouse",
+            "Bradway"
         ]
     },
     {
         "route": "41/414",
         "ends": [
-            "Cantley", "Edlington"
+            "Cantley",
+            "Edlington"
         ]
     },
     {
         "route": "51",
         "ends": [
-            "Lodge Moor", "Charnock", "Crosspool", "Sharrow"
+            "Lodge Moor",
+            "Charnock",
+            "Crosspool",
+            "Sharrow"
         ]
     },
     {
         "route": "52/52a",
         "ends": [
-            "Doncaster", "South Elmsall", "Woodhouse", "Wisewood", "Loxley"
+            "Doncaster",
+            "South Elmsall",
+            "Woodhouse",
+            "Wisewood",
+            "Loxley"
         ]
     },
     {
         "route": "56",
         "ends": [
-            "Nether Edge", "Wybourn"
+            "Nether Edge",
+            "Wybourn"
         ]
     },
     {
         "route": "75/76",
         "ends": [
-            "Batemoor/ Jordanthorpe", "Lowedges", "Woodhouse", "Shiregreen"
+            "Batemoor/ Jordanthorpe",
+            "Lowedges",
+            "Woodhouse",
+            "Shiregreen"
         ]
     },
     {
         "route": "81/82",
         "ends": [
-            "Stannington", "Dore", "Hall Park Head", "Millhouses"
+            "Stannington",
+            "Dore",
+            "Hall Park Head",
+            "Millhouses"
         ]
     },
     {
         "route": "95/95a",
         "ends": [
-            "Walkley", "Meadowhall"
+            "Walkley",
+            "Meadowhall"
         ]
     },
     {
         "route": "97/98",
         "ends": [
-            "Hillsborough", "Totley"
+            "Hillsborough",
+            "Totley"
         ]
     },
     {
         "route": "208",
         "ends": [
-            "Sheffield", "Dinnington"
+            "Sheffield",
+            "Dinnington"
         ]
     },
     {
         "route": "271/272",
         "ends": [
-            "Sheffield", "Castleton"
+            "Sheffield",
+            "Castleton"
+        ]
+    },
+    {
+        "route": "1",
+        "ends": [
+            "Sheffield",
+            "Jordanthorpe"
+        ]
+    },
+    {
+        "route": "2",
+        "ends": [
+            "Barnsley Interchange",
+            "Barnsley Town Centre",
+            "Moor Market"
+        ]
+    },
+    {
+        "route": "5",
+        "ends": [
+            "Firth Park",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "6",
+        "ends": [
+            "Arundel Gate",
+            "Millhouses"
+        ]
+    },
+    {
+        "route": "7a",
+        "ends": [
+            "Crystal Peaks",
+            "Beighton",
+            "Woodhouse",
+            "Birley",
+            "Sheffield"
+        ]
+    },
+    {
+        "route": "9",
+        "ends": [
+            "Sheffield",
+            "Darnall"
+        ]
+    },
+    {
+        "route": "9a",
+        "ends": [
+            "Manor top",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "10",
+        "ends": [
+            "Arbouthorne",
+            "Nether Edge",
+            "Sheffield city centre",
+            "Manor top"
+        ]
+    },
+    {
+        "route": "10a",
+        "ends": [
+            "Arbouthorne",
+            "Nether Edge",
+            "Sheffield city centre",
+            "Manor top"
+        ]
+    },
+    {
+        "route": "20",
+        "ends": [
+            "Hemsworth",
+            "Ecclesfield"
+        ]
+    },
+    {
+        "route": "29",
+        "ends": [
+            "Sheffield city centre",
+            "Penistone"
+        ]
+    },
+    {
+        "route": "30",
+        "ends": [
+            "Broomhill",
+            "Crystal Peaks"
+        ]
+    },
+    {
+        "route": "30a",
+        "ends": [
+            "Broomhill",
+            "Plumbley"
+        ]
+    },
+    {
+        "route": "x30",
+        "ends": [
+            "Broomhill",
+            "Harthill"
+        ]
+    },
+    {
+        "route": "32",
+        "ends": [
+            "Sheffield city centre",
+            "Firth Park"
+        ]
+    },
+    {
+        "route": "32a",
+        "ends": [
+            "Firth Park",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "43",
+        "ends": [
+            "Chesterfield",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "44",
+        "ends": [
+            "Chesterfield",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "50",
+        "ends": [
+            "Birk Hill",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "50a",
+        "ends": [
+            "Chesterfield",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "53",
+        "ends": [
+            "Mansfield",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "55",
+        "ends": [
+            "Frenchville",
+            "Plumbley"
+        ]
+    },
+    {
+        "route": "57",
+        "ends": [
+            "Sheffield city centre",
+            "Stocksbridge"
+        ]
+    },
+    {
+        "route": "61",
+        "ends": [
+            "Hillsborough",
+            "Hillsborough"
+        ]
+    },
+    {
+        "route": "62",
+        "ends": [
+            "Hillsborough",
+            "Hillsborough"
+        ]
+    },
+    {
+        "route": "65",
+        "ends": [
+            "Blackwell in the Peak",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "76a",
+        "ends": [
+            "Lowedges",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "80",
+        "ends": [
+            "Sheffield city centre",
+            "Chesterfield"
+        ]
+    },
+    {
+        "route": "80a",
+        "ends": [
+            "Sheffield city centre",
+            "Chesterfield"
+        ]
+    },
+    {
+        "route": "83",
+        "ends": [
+            "Bents Green",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "83a",
+        "ends": [
+            "Ecclesfield",
+            "Fulwood"
+        ]
+    },
+    {
+        "route": "86",
+        "ends": [
+            "Chapeltown",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "88",
+        "ends": [
+            "Ecclesfield",
+            "Banner Cross"
+        ]
+    },
+    {
+        "route": "120",
+        "ends": [
+            "Crystal Peaks",
+            "Fulwood"
+        ]
+    },
+    {
+        "route": "135",
+        "ends": [
+            "Grenoside",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "137",
+        "ends": [
+            "Rotherham Town Centre",
+            "Meadowhall"
+        ]
+    },
+    {
+        "route": "218",
+        "ends": [
+            "Bakewell",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "252",
+        "ends": [
+            "Birk Hill",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "A1",
+        "ends": [
+            "Meadowhall",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "H1",
+        "ends": [
+            "Broomhill",
+            "Fir Vale"
+        ]
+    },
+    {
+        "route": "M17",
+        "ends": [
+            "Jordanthorpe",
+            "Dore"
+        ]
+    },
+    {
+        "route": "SL1",
+        "ends": [
+            "Deepcar",
+            "Middlewood"
+        ]
+    },
+    {
+        "route": "SL1a",
+        "ends": [
+            "Deepcar",
+            "Middlewood"
+        ]
+    },
+    {
+        "route": "X17",
+        "ends": [
+            "Chesterfield",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "181",
+        "ends": [
+            "Sheffield city centre",
+            "Dore"
+        ]
+    },
+    {
+        "route": "216",
+        "ends": [
+            "Sheffield city centre",
+            "Dinnington"
+        ]
+    },
+    {
+        "route": "218",
+        "ends": [
+            "Bakewell",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "252",
+        "ends": [
+            "Birk Hill",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "257",
+        "ends": [
+            "Bakewell",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "X7",
+        "ends": [
+            "Matlby",
+            "Sheffield city centre"
+        ]
+    },
+    {
+        "route": "X30",
+        "ends": [
+            "Broomhill",
+            "Harthill"
         ]
     }
 ]
